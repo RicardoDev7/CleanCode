@@ -35,15 +35,15 @@
     }
     getBooks();
 
-    function getBooksByUrl( u: string) {
-        console.log(`Obteniendo libros desde: ${u}`);
+    function getBooksByUrl( url: string) {
+        console.log(`Obteniendo libros desde: ${url}`);
     }
     getBooksByUrl('https://api.example.com/books');
     
-    function calculateArea( s: number ) {
-        console.log(`Área del cuadrado: ${s * s}`);
+    function calculateSquareArea( side: number ) {
+        console.log(`Área del cuadrado: ${side * side}`);
     }
-    calculateArea(5);
+    calculateSquareArea(5);
 
     function printJob() {
         console.log('Imprimiendo trabajo...');
