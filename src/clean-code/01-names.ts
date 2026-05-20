@@ -15,15 +15,19 @@
     const filesToDelete = files.map( x => x.toDelete );
     console.log(`Archivos marcados para borrar: ${filesToDelete.filter(Boolean).length}`);
     
+    /*
     class AbstractUser { };
     class UserMixin { };
     class UserImplementation { };
     interface IUser { };
+    */
 
     // Mejor
-    class User { };
     interface User { };
-
+    class User implements User { };
+    
+    const user: User = new User();
+    console.log(`Usuario: ${user}`);
 
     // Todo: Tarea
         
