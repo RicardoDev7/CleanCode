@@ -68,7 +68,9 @@
     public user: User;
     public settings: Settings;
     constructor({
-        name, gender, birthDate, email, role, workingDirectory, lastOpenFolder
+        name, gender, birthDate, 
+        email, role, 
+        workingDirectory, lastOpenFolder
     }: UserSettingsProps){
         this.person = new Person({ name, gender, birthDate });
         this.user = new User({ email, role });
